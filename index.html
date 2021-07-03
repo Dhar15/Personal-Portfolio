@@ -1,0 +1,649 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Personal Portfolio </title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- FONT AWESOME LINK -->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> <!-- SWIPER cSS LINK -->
+
+        <link rel="stylesheet" href="assets/css/styles.css"> <!-- CSS FILE -->
+    </head>
+
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav_logo">Kshitij<span id="dot">.</span></a>
+
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link active-link">
+                                <i class="fa fa-home nav_icon"></i> Home
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class="fa fa-user nav_icon"></i> About
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class="fa fa-cogs nav_icon"></i> Skills
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#qualification" class="nav_link">
+                                <i class="fa fa-university nav_icon"></i> Qualification
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#project" class="nav_link">
+                                <i class="fa fa-briefcase nav_icon"></i> Projects
+                            </a>
+                        </li>
+
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class="fa fa-paper-plane nav_icon"></i> Contact me
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="fa fa-times nav_close" id="nav-close"></i> 
+                </div>
+
+                <div class="nav_buttons">
+                    <!-- Theme change button -->
+                    <i class="fa fa-moon-o change-theme" id="theme-button"></i>
+
+                    <div class="nav_toggle" id="nav-toggle">
+                        <i class="fa fa-th-large"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main content of document -->
+        <main class="main">
+
+            <!-- HOME SCREEN -->
+            <section class="home section" id="home">
+                <div class="home_container container grid">
+                    <div class="home_content grid">
+                        <div class="home_social">
+                            <a href="https://www.facebook.com/kshitij.dhar.9/" target="_blank" class="home_social-icon"> 
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/kshitij-dhar-493a76164/" target="_blank" class="home_social-icon"> 
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+
+                            <a href="https://github.com/Dhar15" target="_blank" class="home_social-icon"> 
+                                <i class="fa fa-github"></i>
+                            </a>
+                        </div>
+
+                        <div class="home_img">
+                            <!-- <svg class="home_blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#D0E2FF" d="M52.1,-54.1C66.1,-38.2,75,-19.1,76.6,1.6C78.3,22.3,72.6,44.6,58.6,57.1C44.6,69.6,22.3,72.3,1.1,71.3C-20.2,70.2,-40.3,65.4,-56.5,52.8C-72.6,40.3,-84.6,20.2,-83.6,1C-82.6,-18.1,-68.5,-36.2,-52.3,-52.2C-36.2,-68.2,-18.1,-82,0.5,-82.5C19.1,-83,38.2,-70.1,52.1,-54.1Z" transform="translate(100 100)" />
+                                <image class="home_blob-img" href="assets/images/kshitij2.png"/> 
+                              </svg> -->
+                              <svg class="home_blob" viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path fill="#D0E2FF" d="M52.1,-54.1C66.1,-38.2,75,-19.1,76.6,1.6C78.3,22.3,72.6,44.6,58.6,57.1C44.6,69.6,22.3,72.3,1.1,71.3C-20.2,70.2,-40.3,65.4,-56.5,52.8C-72.6,40.3,-84.6,20.2,-83.6,1C-82.6,-18.1,-68.5,-36.2,-52.3,-52.2C-36.2,-68.2,-18.1,-82,0.5,-82.5C19.1,-83,38.2,-70.1,52.1,-54.1Z" transform="translate(100 100)" />
+                                </mask>
+
+                                <g mask="url(#mask0)">
+                                    <path fill="#D0E2FF" d="M52.1,-54.1C66.1,-38.2,75,-19.1,76.6,1.6C78.3,22.3,72.6,44.6,58.6,57.1C44.6,69.6,22.3,72.3,1.1,71.3C-20.2,70.2,-40.3,65.4,-56.5,52.8C-72.6,40.3,-84.6,20.2,-83.6,1C-82.6,-18.1,-68.5,-36.2,-52.3,-52.2C-36.2,-68.2,-18.1,-82,0.5,-82.5C19.1,-83,38.2,-70.1,52.1,-54.1Z" transform="translate(100 100)" />
+                                    <image class="home_blob-img" x='25' xlink:href="assets/images/kshitij3.png"></image>
+                                </g>
+                              </svg>
+                        </div>
+
+                        <div class="home_data">
+                            <h1 class="home-title"> Hi, I'm Kshitij </h1>
+                            <h3 class="home_subtitle"> Full stack developer </h3>
+                            <p class="home_description"> Good experience in web design and development, passionate and dedicated in my work and love for coding. </p>
+                            <a href="#contact" class="button button-flex"> Contact me <i class="fa fa-paper-plane button_icon"></i> </a> 
+                        </div>
+                    </div>
+
+                    <div class="home_scroll">
+                        <a href="#about" class="home_scroll-button button-flex">
+                            <i class="fa fa-tablet home_scroll-mouse"></i> 
+                            <span class="home_scroll-name">Scroll down</span>
+                            <i class="fa fa-arrow-down home_scroll-name"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- ABOUT SCREEN -->
+        <section class="about section" id="about">
+            <h2 class="section_title"> About Me </h2>
+            <span class="section_subtitle">My Introduction</span>
+
+            <div class="about_container container grid">
+                <img src="assets/images/about.jpeg" alt="" class="about_img">
+
+                <div class="about_data">
+                    <p class="about_description"> A full stack developer with extensive knowledge of front-end technologies like 
+                        HTML, CSS, JS and back-end languages like Java, Python, etc. with good leadership and hard-working skills.</p>
+                
+                    <div class="about_info">
+                        <div>
+                            <span class="about_info-title">03+</span>
+                            <span class="about_info-name"> Years <br> experience</span>  
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">06+</span>
+                            <span class="about_info-name"> Completed <br> projects</span>  
+                        </div>
+
+                        <div>
+                            <span class="about_info-title">02+</span>
+                            <span class="about_info-name"> Companies <br> worked</span>  
+                        </div>
+                    </div>
+
+                    <div class="about_buttons">
+                        <a href="assets/pdf/resume.pdf" target="__blank" class="button button-flex" download>
+                            Download CV<i class="fa fa-download button_icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- SKILLS SCREEN -->
+        <section class="skills section" id="skills">
+            <h2 class="section_title"> Skills </h2>
+            <span class="section_subtitle">My technical knowledge</span>
+
+            <div class="skills_container container grid">
+                <div>
+                    <!-- FRONT END SKILLS -->
+                    <div class="skills_content skills_open">
+                        <div class="skills_header">
+                            <i class="fa fa-code skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Frontend developer</h1>
+                                <span class="skills_subtitle">More than 3 years</span>
+                            </div>
+
+                            <i class="fa fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">HTML</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_html"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">CSS</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_css"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">JavaScript</h3>
+                                    <span class="skills_number">60%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_js"></span>
+                                </div>
+                            </div>   
+                            
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">React</h3>
+                                    <span class="skills_number">45%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_react"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- BACK END SKILLS -->
+                     <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="fa fa-server skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Backend developer</h1>
+                                <span class="skills_subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="fa fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">C</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_c"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Java</h3>
+                                    <span class="skills_number">85%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_java"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">C++</h3>
+                                    <span class="skills_number">75%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_cplus"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Python</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_py"></span>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                     <!-- OTHER SKILLS -->
+                     <div class="skills_content skills_close">
+                        <div class="skills_header">
+                            <i class="fa fa-database skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title">Database & Other skills</h1>
+                                <span class="skills_subtitle">More than 2 years</span>
+                            </div>
+
+                            <i class="fa fa-angle-down skills_arrow"></i>
+                        </div>
+
+                        <div class="skills_list grid">
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">SQL</h3>
+                                    <span class="skills_number">70%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_sql"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Flutter</h3>
+                                    <span class="skills_number">80%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_flutter"></span>
+                                </div>
+                            </div>
+
+                            <div class="skills_data">
+                                <div class="skills_titles">
+                                    <h3 class="skills_name">Git</h3>
+                                    <span class="skills_number">90%</span>
+                                </div>
+                                
+                                <div class="skills_bar">
+                                    <span class="skills_percentage skills_git"></span>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- QUALIFICATIONS SCREEN -->
+        <section class="qualification section" id="qualification">
+            <h2 class="section_title">Qualification</h2>
+            <span class="section_subtitle">My personal journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button-flex qualification_active" data-target='#education'>
+                        <i class="fa fa-graduation-cap qualification_icon"></i>
+                        Education
+                    </div>
+
+                    <div class="qualification_button button-flex" data-target="#work">
+                        <i class="fa fa-briefcase qualification_icon"></i>
+                        Work
+                    </div>
+                </div>
+
+                <div class="qualification_sections">
+                    <!-- EDUCATION QUALIFICATIONS -->
+                    <div class="qualification_content qualification_active" data-content id="education">
+
+                        <!-- FIRST QUALIFICATION -->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Science</h3>
+                                <span class="qualification_subtitle">Ryan International School</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2005-2015
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!-- SECOND QUALIFICATION -->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                            
+                            <div>
+                                <h3 class="qualification_title">Computer Science</h3>
+                                <span class="qualification_subtitle">Gopalan</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2015-2017
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- THIRD QUALIFICATION -->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Computer Engineering</h3>
+                                <span class="qualification_subtitle">Sir MVIT</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2017-2021
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- WORK QUALIFICATIONS -->
+                    <div class="qualification_content" data-content id="work">
+
+                        <!-- FIRST QUALIFICATION -->
+                        <div class="qualification_data">
+                            <div>
+                                <h3 class="qualification_title">Flutter Developer</h3>
+                                <span class="qualification_subtitle">Naaniz</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2019-2020
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+
+                        <!-- SECOND QUALIFICATION -->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+                            
+                            <div>
+                                <h3 class="qualification_title">Associate System Architect</h3>
+                                <span class="qualification_subtitle">Pegasystems</span>
+                                <div class="qualification_calendar">
+                                    <i class="fa fa-calendar"></i>
+                                    2020-2021
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>              
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SCREEN -->
+        <section class="project section" id="project">
+            <h2 class="section_title">Projects</h2>
+            <span class="section_subtitle">Most recent work</span> 
+            
+            <div class="project_container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- FIRST PROJECT -->
+                    <div class="project_content grid swiper-slide">
+                        <img src="assets/images/project1.png" alt="" class="project_img">
+
+                        <div class="project_data">
+                            <h3 class="project_title">Diabetic Retinopathy Detection</h3>
+                            <p class="project_description">A website where users can upload their fundus images to detect if 
+                                they suffer with DR, through a model built using Deep learning.</p>
+                            <a href="#" class="button button-flex button-small project_button">
+                                Demo
+                                <i class="fa fa-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SECOND PROJECT -->
+                    <div class="project_content grid swiper-slide">
+                        <img src="assets/images/project2.png" alt="" class="project_img">
+
+                        <div class="project_data">
+                            <h3 class="project_title">QR [En|De]coder</h3>
+                            <p class="project_description">A website designed during my early college days to generate QR code for 
+                                multiple events and use-cases, along with decryption of a QR.</p>
+                            </p>
+                            <a href="#" class="button button-flex button-small project_button">
+                                Demo
+                                <i class="fa fa-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- THIRD PROJECT -->
+                    <div class="project_content grid swiper-slide">
+                        <img src="assets/images/project3.png" alt="" class="project_img">
+
+                        <div class="project_data">
+                            <h3 class="project_title">Food Ordering System</h3>
+                            <p class="project_description">A POS website developed as part of RDBMS project that allows customers
+                                to view food products and order desired items.</p>
+                            </p>
+                            <a href="#" class="button button-flex button-small project_button">
+                                Demo
+                                <i class="fa fa-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation arrows -->
+                <div class="swiper-button-next">
+                    <i class="fa fa-angle-right swiper-project-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fa fa-angle-left swiper-project-icon"></i>
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div> 
+            </div>
+        </section>
+
+        <!-- CONTACT ME SCREEN -->
+        <section class="contact section" id="contact">
+            <h2 class="section_title">Contact Me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div>
+                    <div class="contact_information">
+                        <i class="fa fa-phone contact_icon"></i>
+                        
+                        <div>
+                            <h3 class="contact_title">Call Me</h3>
+                            <span class="contact_subtitle">819-709-8472</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="fa fa-envelope contact_icon"></i>
+                        
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">dharkshitij@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information">
+                        <i class="fa fa-map-marker contact_icon"></i>
+                        
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">Bengaluru, Karnataka</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="form.php" method="POST" class="contact_form grid" id="form">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="name" class="contact_label">Name</label>
+                            <input type="text" class="contact_input" name="name" id="name" required> 
+                        </div>
+
+                        <div class="contact_content">
+                            <label for="email" class="contact_label">Email</label>
+                            <input type="email" class="contact_input" name="email" id="email" required>
+                        </div>
+                    </div>
+                    <div class="contact_content">
+                        <label for="message" class="contact_label">Message</label>
+                        <textarea name="message" id="message" cols="0" rows="7" class="contact_input" required></textarea>
+                    </div>
+
+                    <div>
+                        <a href="" onclick="submitForm()" class="button button-flex"> <button type="submit"></button>
+                            Send Message
+                            <i class="fa fa-user-secret button_icon"></i>
+                        </a>
+                    </div>                
+                </form>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer_bg">
+                <div class="footer_container container grid">
+                    <div>
+                        <h1 class="footer_title">Kshitij</h1>
+                        <span class="footer_subtitle">Full-stack developer</span>
+                    </div>
+
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#skills" class="footer_link">Skills</a>
+                        </li>
+
+                        <li>
+                            <a href="#qualification" class="footer_link">Qualification</a>
+                        </li>
+
+                        <li>
+                            <a href="#project" class="footer_link">Projects</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer_socials">
+                        <a href="https://www.facebook.com/kshitij.dhar.9/" target="_blank" class="footer_social">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/kshitij_dhar/" target="_blank" class="footer_social">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+
+                        <a href="https://twitter.com/dhar_kshitij" target="_blank" class="footer_social">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer_copy">&#169; Kshitij Dhar. All rights reserved. </p>
+            </div>
+        </footer>
+
+        <!-- Scroll up -->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="fa fa-angle-double-up scrollup_icon"></i>
+        </a>
+
+        <script src="assets/js/swiper-bundle.min.js"> </script> <!-- SWIPER JS FILE -->
+        <script src="assets/js/main.js"> </script> <!-- JS FILE -->
+    </body>
+</html>
