@@ -4,5 +4,7 @@
 
 <img src="assets/images/main.jpg" width="900" height="500">
 
-<h4> The portfolio gives a detailed view into my skills, qualifications, projects I've w
+<img src="assets/images/main_mobile.jpg">
+
+<h4> The portfolio gives a detailed view into my skills, qualifications, projects I've worked on along with information on how to reach me.
 
