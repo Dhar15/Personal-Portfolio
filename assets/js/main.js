@@ -144,8 +144,13 @@ if(selectedTheme) {
 themeButton.addEventListener('click', () => {
     //Add or remove dark/icon theme
     document.body.classList.toggle(darkTheme)
-//     themeButton.classList.toggle(iconTheme)
-    themeButton.classList.toggle('fa-moon-o')
+    if(themeButton.classList.contains("fa-moon-o")) {
+        themeButton.classList.remove("fa-moon-o");
+        themeButton.classList.add("fa-sun-o");
+    } else {
+        themeButton.classList.remove("fa-sun-o");
+        themeButton.classList.add("fa-moon-o");
+    }
     
 
     //We save the theme and current icon user chose
