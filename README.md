@@ -10,4 +10,4 @@
   
 Original UI credits - <a href="https://github.com/bedimcode/responsive-portfolio-website-Alexa"> here. </a>
 
-Portfolio URL - <a href="https://kshitij-portfolio.000webhostapp.com/"> here. </a> 
+Portfolio URL - <a href="https://kshitij-personal-portfolio.netlify.app/"> here. </a> 
