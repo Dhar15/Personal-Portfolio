@@ -127,7 +127,7 @@ a {
 
 a.disabled {
     pointer-events: none;
-    color: #e1e1e1;
+    background-color: #a9a9a9;
 }
 
 img { 
