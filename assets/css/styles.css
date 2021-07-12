@@ -125,6 +125,11 @@ a {
     text-decoration: none;
 }
 
+a.disabled {
+    pointer-events: none;
+    color: #e1e1e1;
+}
+
 img { 
     max-width: 100%;
     height: auto;
