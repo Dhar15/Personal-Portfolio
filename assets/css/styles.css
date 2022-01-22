@@ -173,7 +173,7 @@ img {
 .tooltip {
   position: relative;
   background: blue;
-  padding: 8px 12px;
+  padding: 6px 12px;
   margin: 10px;
   font-size: 15px;
   border-radius: 100%;
